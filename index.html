@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tech Care</title>
+</head>
+
+<body>
+    <main class="main">
+        <!-- Header -->
+        
+        <header class="header">
+            <div class="brand">
+                <a href="index.html">
+                    <img src="assets/TestLogo.svg" alt="Tech Care logo" />
+                </a>
+            </div>
+            <!-- Navigation -->
+
+            <nav class="nav">
+                <ul class="nav-items">
+                    <li class="nav-item">
+                        <a href="#" aria-label="Overview">
+                            <div class="nav-item-icon">
+                                <img src="assets/home_FILL0_wght300_GRAD0_opsz24.svg" alt="overview icon" />
+                            </div>
+                            <div class="nav-item-text">Overview</div>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#" aria-label="Patients">
+                            <div class="nav-item-icon">
+                                <img src="assets/group_FILL0_wght300_GRAD0_opsz24.svg" alt="patients icon" />
+                            </div>
+                            <div class="nav-item-text">Patients</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" aria-label="Schedule">
+                            <div class="nav-item-icon">
+                                <img src="assets/calendar_today_FILL0_wght300_GRAD0_opsz24.svg" alt="schedule icon" />
+                            </div>
+                            <div class="nav-item-text">Schedule</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" aria-label="Message">
+                            <div class="nav-item-icon">
+                                <img src="assets/chat_bubble_FILL0_wght300_GRAD0_opsz24.svg" alt="message icon" />
+                            </div>
+                            <div class="nav-item-text">Message</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" aria-label="Transactions">
+                            <div class="nav-item-icon">
+                                <img src="assets/credit_card_FILL0_wght300_GRAD0_opsz24.svg" alt="transactions icon" />
+                            </div>
+                            <div class="nav-item-text">Transactions</div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <!-- Navigation -->
+            
+            <!-- User Profile -->
+            
+            <div class="user-profile">
+                <div class="user-profile-image">
+                    <img src="assets/senior-woman-doctor-and-portrait-smile-for-health-2023-11-27-05-18-16-utc.png"
+                        alt="Dr. Jose Simmons" />
+                </div>
+                <div class="user-profile-info">
+                    <p class="user-profile-info-username">Dr. Jose Simmons</p>
+                    <p class="user-profile-info-role">General Practitioner</p>
+                </div>
+                <div class="user-profile-settings">
+                    <div class="user-profile-settings-icon" aria-label="Settings">
+                        <img src="assets/settings_FILL0_wght300_GRAD0_opsz24.svg" alt="settings icon" />
+                    </div>
+                    <div class="user-profile-settings-icon" aria-label="More options">
+                        <img src="assets/more_vert_FILL0_wght300_GRAD0_opsz24.svg" alt="more options icon" />
+                    </div>
+                </div>
+            </div>
+            
+            <!-- User Profile -->
+
+        </header>
+        
+        <!-- Header -->
+
+        <div class="content-container content">
+            <!-- Small Width Container -->
+
+            <div class="sm-width mt-32">
+                <div class="bg-card px-0">
+                    <div class="bg-card-header mb-40 px-2 pt-2">
+                        <div class="card-header-title">Patients</div>
+                        <div class="card-header-icon" aria-label="Search">
+                            <img src="assets/search_FILL0_wght300_GRAD0_opsz24.svg" alt="search icon" />
+                        </div>
+                    </div>
+
+                    <!-- Patient List -->
+
+                    <div class="bg-card-content h-lg" id="patient-list">
+                    </div>
+
+                    <!-- Patient List -->
+
+                </div>
+            </div>
+            
+            <!-- Small Width Container -->
+
+            <!-- Large Width Container -->
+            
+            <div class="lg-width mt-32">
+                <div class="content content-column">
+                    <div class="bg-card">
+                        <div class="bg-card-header mb-40">
+                            <div class="card-header-title">Diagnosis History</div>
+                        </div>
+                        <div class="bg-card-content">
+                            <div class="diagnosis-graph-container">
+                                <div class="diagnosis-canvas-container">
+                                    <div class="graph-heading">
+                                        <div class="graph-heading-title">
+                                            Blood Pressure
+                                        </div>
+                                        <div class="graph-heading-select" aria-label="Select period">
+                                            <div class="graph-heading-select-text"> Last 6 months </div>
+                                            <div class="graph-heading-select-icon">
+                                                <img src="assets/expand_more_FILL0_wght300_GRAD0_opsz24.svg" alt="expand icon">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Graph Here -->
+
+                                    <canvas class="diagnosis-graph" aria-label="Blood Pressure Graph"></canvas>
+
+                                    <!-- Graph Here -->
+
+                                </div>
+
+                                <!-- Legends Here -->
+
+                                <div class="legends">
+                                </div>
+
+                                <!-- Legends Here -->
+                            </div>
+
+                            <!-- Diagnosis Cards -->
+                            
+                            <div class="diagnosis-history-cards">
+                            </div>
+                            
+                            <!-- Diagnosis Cards -->
+                        </div>
+                    </div>
+                    <div class="bg-card">
+                        <div class="bg-card-header mb-40">
+                            <div class="card-header-title">Diagnostic List</div>
+                        </div>
+                        
+                        <!-- Diagnosis List Table -->
+                        
+                        <div class="bg-card-content h-sm">
+                            <table class="table" aria-label="Diagnostic List Table">
+                                <thead>
+                                    <tr>
+                                        <th>Problem/Diagnosis</th>
+                                        <th>Description</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="diagnosis-list">
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <!-- Diagnosis List Table -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Large Width Container -->
+            
+            <!-- Small Width Container -->
+            
+            <div class="sm-width mt-18">
+                <div class="content content-column">
+                    <div class="bg-card" id="patient-profile">
+                    </div>
+                    <div class="bg-card">
+                        <div class="bg-card-header mb-16">
+                            <div class="card-header-title">Lab Reports</div>
+                        </div>
+                        <div class="bg-card-content h-sm">
+                            
+
+                            <!-- Lab List Here -->
+                            
+                            <div class="lab-report-list" id="lab-report-list">
+                            </div>
+
+                            <!-- Lab List Here -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Small Width Container -->
+        </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        var PATIENT = "Jessica Taylor";
+        const headers = new Headers();
+        const username = "coalition";
+        const password = "skills-test";
+        const auth = btoa(`${username}:${password}`);
+        headers.append("Authorization", `Basic ${auth}`);
+    
+        var requestOptions = {
+            method: "GET",
+            headers: headers,
+            redirect: "follow",
+        };
+    
+        fetch(
+            "https://fedskillstest.coalitiontechnologies.workers.dev",
+            requestOptions
+        )
+            .then((response) => response.json())
+            .then((result) => paintScreen(result))
+            .catch((error) => console.log("error", error));
+    
+        function paintScreen(data) {
+            console.log(data)
+            const specificPatientData = data.find(
+                (diagnosis) => diagnosis.name === PATIENT
+            );
+            paintAllPatientLists(data);
+            paintPatientAllDiagnosticLists(specificPatientData);
+            paintPatientAllLabReports(specificPatientData);
+            paintPatientInfo(specificPatientData);
+            paintGraph(specificPatientData.diagnosis_history);
+        }
+    
+        function paintAllPatientLists(data) {
+            let patientList = data
+                .map((patient) => {
+                    return `<div class="patient-card mb-32 ${patient.name === PATIENT ? 'active' : ''}" role="listitem">
+                        <div class="patient-image">
+                            <img src="${patient.profile_picture}" alt="Photo of ${patient.name}" />
+                        </div>
+                        <div class="patient-info">
+                            <p class="patient-info-username">${patient.name}</p>
+                            <p class="patient-info-bio">${patient.gender}, ${patient.age}</p>
+                        </div>
+                        <div class="patient-settings">
+                            <div class="patient-settings-icon">
+                                <img src="assets/more_horiz_FILL0_wght300_GRAD0_opsz24.svg" alt="More settings icon" />
+                            </div>
+                        </div>
+                    </div>`;
+                })
+                .join("");
+            document.querySelector("#patient-list").innerHTML = patientList;
+        }
+    
+        function paintPatientAllDiagnosticLists(data) {
+            let diagnosticList = data.diagnostic_list
+                .map((list) => {
+                    return `<tr>
+                        <td>${list.name}</td>
+                        <td>${list.description}</td>
+                        <td>${list.status}</td>
+                    </tr>`;
+                })
+                .join("");
+            document.querySelector("#diagnosis-list").innerHTML = diagnosticList;
+        }
+    
+        function paintPatientAllLabReports(data) {
+            let labReportList = data.lab_results
+                .map((list) => {
+                    return `<div class="lab-report" role="listitem">
+                        <div class="lab-report-type">${list}</div>
+                        <div class="lab-report-icon">
+                            <img src="assets/download_FILL0_wght300_GRAD0_opsz24 (1).svg" alt="Download lab report icon" />
+                        </div>
+                    </div>`;
+                })
+                .join("");
+            document.querySelector("#lab-report-list").innerHTML = labReportList;
+        }
+    
+        function paintPatientInfo(data) {
+            let patientInfo = `<div class="patient-profile">
+                    <div class="patient-profile-image">
+                        <img src="${data.profile_picture}" alt="Photo of ${data.name}" />
+                    </div>
+                    <div class="patient-profile-name">${data.name}</div>
+                </div>
+                <div class="patient-profile-detail-list">
+                    <div class="patient-profile-details">
+                        <div class="patient-profile-details-icon">
+                            <img src="assets/BirthIcon.svg" alt="Date of birth icon" />
+                        </div>
+                        <div class="patient-profile-details-info">
+                            <p class="patient-profile-details-info-label">Date Of Birth</p>
+                            <p class="patient-profile-details-info-value">${data.date_of_birth}</p>
+                        </div>
+                    </div>
+                    <div class="patient-profile-details">
+                        <div class="patient-profile-details-icon">
+                            <img src="assets/FemaleIcon.svg" alt="Gender icon" />
+                        </div>
+                        <div class="patient-profile-details-info">
+                            <p class="patient-profile-details-info-label">Gender</p>
+                            <p class="patient-profile-details-info-value">${data.gender}</p>
+                        </div>
+                    </div>
+                    <div class="patient-profile-details">
+                        <div class="patient-profile-details-icon">
+                            <img src="assets/PhoneIcon.svg" alt="Contact info icon" />
+                        </div>
+                        <div class="patient-profile-details-info">
+                            <p class="patient-profile-details-info-label">Contact Info</p>
+                            <p class="patient-profile-details-info-value">${data.phone_number}</p>
+                        </div>
+                    </div>
+                    <div class="patient-profile-details">
+                        <div class="patient-profile-details-icon">
+                            <img src="assets/PhoneIcon.svg" alt="Emergency contacts icon" />
+                        </div>
+                        <div class="patient-profile-details-info">
+                            <p class="patient-profile-details-info-label">Emergency Contacts</p>
+                            <p class="patient-profile-details-info-value">${data.emergency_contact}</p>
+                        </div>
+                    </div>
+                    <div class="patient-profile-details">
+                        <div class="patient-profile-details-icon">
+                            <img src="assets/InsuranceIcon.svg" alt="Insurance provider icon" />
+                        </div>
+                        <div class="patient-profile-details-info">
+                            <p class="patient-profile-details-info-label">Insurance Provider</p>
+                            <p class="patient-profile-details-info-value">${data.insurance_type}</p>
+                        </div>
+                    </div>
+                    <button class="btn" aria-label="Show all patient information">Show All Information</button>
+                </div>`;
+            document.querySelector("#patient-profile").innerHTML = patientInfo;
+        }
+    
+        function paintGraph(data) {
+            const ctx = document.querySelector(".diagnosis-graph").getContext("2d");
+            const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    
+            data.sort((a, b) => {
+                if (a.year === b.year) {
+                    return monthNames.indexOf(a.month.slice(0, 3)) - monthNames.indexOf(b.month.slice(0, 3));
+                }
+                return a.year - b.year;
+            });
+    
+            const recentData = data.slice(-6);
+            const labels = recentData.map((entry) => `${monthNames[monthNames.indexOf(entry.month.slice(0, 3))]} ${entry.year}`);
+            const systolicValues = recentData.map((entry) => entry.blood_pressure.systolic.value);
+            const diastolicValues = recentData.map((entry) => entry.blood_pressure.diastolic.value);
+    
+            const latestEntry = recentData[recentData.length - 1];
+    
+            document.querySelector(".legends").innerHTML = `
+                <div class="legend" role="listitem">
+                    <div class="legend-heading">
+                        <div class="color pink"></div>
+                        <div class="title">Systolic</div>
+                    </div>
+                    <div class="value" id="systolic">${latestEntry.blood_pressure.systolic.value}</div>
+                    <div class="description">
+                        <div class="description-icon"><img src="assets/ArrowUp.svg" alt="Systolic icon"></div>
+                        <div class="description-text" id="systolic-rate">${latestEntry.blood_pressure.systolic.levels}</div>
+                    </div>
+                </div>
+                <div class="legend-bar" role="presentation"></div>
+                <div class="legend" role="listitem">
+                    <div class="legend-heading">
+                        <div class="color blue"></div>
+                        <div class="title">Diastolic</div>
+                    </div>
+                    <div class="value" id="diastolic">${latestEntry.blood_pressure.diastolic.value}</div>
+                    <div class="description">
+                        <div class="description-icon"><img src="assets/ArrowDown.svg" alt="Diastolic icon"></div>
+                        <div class="description-text" id="diastolic-rate">${latestEntry.blood_pressure.diastolic.levels}</div>
+                    </div>
+                </div>
+            `;
+    
+            document.querySelector(".diagnosis-history-cards").innerHTML = `
+                <div class="diagnosis-history-card bg-blue" role="listitem">
+                    <div class="diagnosis-history-card-icon">
+                        <img src="assets/respiratory rate.svg" alt="Respiratory rate icon" />
+                    </div>
+                    <div class="diagnosis-history-card-info">
+                        <p class="diagnosis-history-card-type">Respiratory Rate</p>
+                        <p class="diagnosis-history-card-unit" id="respiratory-rate">${latestEntry.respiratory_rate.value} bpm</p>
+                        <div class="diagnosis-history-card-status">
+                            <div class="diagnosis-history-card-status-text" id="respiratory-rate-status">${latestEntry.respiratory_rate.levels}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="diagnosis-history-card bg-brown" role="listitem">
+                    <div class="diagnosis-history-card-icon">
+                        <img src="assets/temperature.svg" alt="Temperature icon" />
+                    </div>
+                    <div class="diagnosis-history-card-info">
+                        <p class="diagnosis-history-card-type">Temperature</p>
+                        <p class="diagnosis-history-card-unit" id="temperature">${latestEntry.temperature.value} °F</p>
+                        <div class="diagnosis-history-card-status">
+                            <div class="diagnosis-history-card-status-text" id="temperature-status">${latestEntry.temperature.levels}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="diagnosis-history-card bg-pink" role="listitem">
+                    <div class="diagnosis-history-card-icon">
+                        <img src="assets/HeartBPM.svg" alt="Heart rate icon" />
+                    </div>
+                    <div class="diagnosis-history-card-info">
+                        <p class="diagnosis-history-card-type">Heart Rate</p>
+                        <p class="diagnosis-history-card-unit" id="heart-rate">${latestEntry.heart_rate.value} bpm</p>
+                        <div class="diagnosis-history-card-status">
+                            <div class="diagnosis-history-card-status-icon">
+                                <img src="assets/ArrowDown.svg" alt="Heart rate status icon" />
+                            </div>
+                            <div class="diagnosis-history-card-status-text" id="heart-rate-status">${latestEntry.heart_rate.levels}</div>
+                        </div>
+                    </div>
+                </div>
+            `;
+    
+            const chartData = {
+                labels: labels,
+                datasets: [
+                    {
+                        label: "Systolic Blood Pressure",
+                        data: systolicValues,
+                        borderColor: "#e66fd2",
+                        backgroundColor: "#e66fd2",
+                        borderWidth: 2,
+                        tension: 0.4,
+                        pointRadius: 5,
+                        pointHoverRadius: 7,
+                    },
+                    {
+                        label: "Diastolic Blood Pressure",
+                        data: diastolicValues,
+                        borderColor: "#8C6FE6",
+                        backgroundColor: "#8C6FE6",
+                        borderWidth: 2,
+                        tension: 0.4,
+                        pointRadius: 5,
+                        pointHoverRadius: 7,
+                    },
+                ],
+            };
+    
+            const config = {
+                type: "line",
+                data: chartData,
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            display: false,
+                            position: "top",
+                        },
+                        title: {
+                            display: false,
+                            text: "Blood Pressure Over Time",
+                        },
+                    },
+                    elements: {
+                        point: {
+                            hoverRadius: 7,
+                        },
+                    },
+                },
+            };
+    
+            new Chart(ctx, config);
+        }
+    </script>
+    
+    </script>
+    
+</body>
+
+</html>
